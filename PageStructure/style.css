@@ -1,18 +1,23 @@
+/* This line is to make sure that there's no margins and the width is at max */
 body,html{
   margin:0;
   width:100%;
 }
 
+/* Make the background of the side purple */
 body{
   background-color: purple;
 }
 
+/* Make the text appear in the middle of the screen and also black */
 h1,
 h2,
 p {
   color: black;
   text-align: center;
 }
+
+/* This is used so that images can be set to the middle of the screen as well */
 .center {
   display: block;
   margin-left: auto;
