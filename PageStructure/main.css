@@ -20,11 +20,16 @@ p {
 
 /* This is done so that there's padding around the h1 element */
 h1 {
-  border: 5px solid black;
+  text-align: center;
+  padding-top:12px;
+}
+
+h1 span {
   padding:10px;
+  margin-top:15px;
+  border: 5px solid black;
   border-radius: 10px;
   background-color:#AB2424;
-  text-align: center;
 }
 
 /* This is used so that images can be set to the middle of the screen as well */
