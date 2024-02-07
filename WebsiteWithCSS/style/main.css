@@ -42,6 +42,7 @@ li {
 .column {
   float: left;
   width: 50%;
-  height:500px;
+  height:800px;
   text-align:center;
+  background-color:gray;
 }
