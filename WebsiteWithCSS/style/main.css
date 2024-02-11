@@ -1,6 +1,6 @@
 html {
   padding:10px;
-  background-color: #FBD091;
+  background-color: #fce8ca;
 }
 
 h1,
@@ -28,12 +28,14 @@ li {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  height: 200px;
 }
 
 .center.main {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  position: static;
+  left: auto;
+  right: auto;
+  width: 90%;
   border-radius:30px;
   border: 5px solid blue;
 }
@@ -42,7 +44,7 @@ li {
 .column {
   float: left;
   width: 50%;
-  height:800px;
+  height:750px;
   text-align:center;
-  background-color:gray;
+  background-color:rgb(128, 137, 219);
 }
