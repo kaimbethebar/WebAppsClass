@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <!-- Setup the title, UTF, and reference the seperate CSS file -->
+    <title>[REDACTED] BIKE SHOP</title>
+
+    <!-- Add a meta description -->
+    <meta name="description" content="We are a small shop based out of Carbondale for all of your bike needs!">
+
+    <!-- Reference the stylesheet -->
+    <link rel="stylesheet" href="./style/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./SlickNav/dist/slicknav.min.css" />
+    <script src="./SlickNav/dist/jquery.slicknav.min.js"></script>
+  </head>
+    
+  <body>
+
+    <ul id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rental.html">Rentals</a></li>
+      <li><a href="sales.html">Sales</a></li>
+      <li><a href="contact.html">Contacts</a></li>
+    </ul>
+
+    <script>
+      $(function(){
+        $('#menu').slicknav();
+      });
+    </script>
+
+  <!-- Create a two colomn setup for the website -->
+  <div class="row">
+    <div class="column">
+  
+      <!-- Link to the respective bike image, state their names, price, and how much a helmet is to rent -->
+      <h3>Mountain Bikes:</h3>
+      <img src="./images/mount1.png" class="center">
+      <p><strong>Blue mountain bike:</strong></p>
+      <p>Price: Varies on demand and length of rental <br>Helmet Rental: Extra $25 on total</p>
+  
+      <img src="./images/mount2.png" class="center">
+      <p><strong>Green mountain bike:</strong></p>
+      <p>Price: Varies on demand and length of rental <br>Helmet Rental: Extra $25 on total</p>
+  
+    </div>
+  
+    <div class="column">
+  
+      <!-- Link to the respective bike image, state their names, price, and how much a helmet is to rent -->
+      <h3>Street Bikes:</h3>
+      <img src="./images/street1.png" class="center">
+      <p><strong>White/Blue street bike:</strong></p>
+      <p>Price: Varies on demand and length of rental <br>Helmet Rental: Extra $25 on total</p>
+  
+      <img src="./images/street2.png" class="center">
+      <p><strong>Black/Red street bike:</strong></p>
+      <p>Price: Varies on demand and length of rental <br>Helmet Rental: Extra $25 on total</p>
+  
+      </div>
+    </div>
+  
+    <h3 align="center"><u>!Failing to return a bike in the allowed time will lead to a $50 fine!</u></h3>
+    </body>
+</html>
