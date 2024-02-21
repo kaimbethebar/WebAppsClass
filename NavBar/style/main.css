@@ -24,10 +24,13 @@ body {
 
 /* This is for the main image on the index page */
 .indexImg {
+  display: block;
   position: static;
   left: auto;
   right: auto;
   height:auto;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 90%;
   border-radius:30px;
   border: 3px solid black;
@@ -49,7 +52,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 90%;
-  height: 200px;
 }
 
 /* This Creates a row */
