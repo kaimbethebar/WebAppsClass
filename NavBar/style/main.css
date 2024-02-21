@@ -22,15 +22,8 @@ body {
   font-size: 18;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 90%;
-  height: 200px;
-}
-
-.center.main {
+/* This is for the main image on the index page */
+.indexImg {
   position: static;
   left: auto;
   right: auto;
@@ -40,20 +33,51 @@ body {
   border: 3px solid black;
 }
 
+/* This is used to create to a column on the rent page */
 .column {
   float: left;
   width: 50%;
+  margin-bottom: 10px;
   height:auto;
   text-align:center;
   background-color:rgb(128, 137, 219);
 }
 
+/* This is to format images inside of columns */
+.column img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  height: 200px;
+}
+
+/* This Creates a row */
+.row {
+  float:left;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align:left;
+  background-color:rgb(128, 137, 219);
+  border-radius: 5px;
+}
+
+/* Properly formats images inside of rows */
+.row img{
+  float:left;
+  padding:15px;
+  margin-right: 8px;
+  max-width: 50%;
+}
+
+/* Format the menu bar when large screen */
 #menu {
   display: flex;
   list-style-type: none;
   justify-content: space-evenly;
 }
 
+/* Make image buttons look better */
 a:link, a:visited {
   text-decoration: none;
   color: white;
@@ -64,14 +88,23 @@ a:link, a:visited {
   display: block;
 }
 
+/* Change the color of button when hovered over */
 a:hover {
   background-color:black;
 }
 
+/* By default, hide slicknav menu */
 .slicknav_menu {
     display:none;
 }
 
+
+/* 
+If a screen is smaller than the body size and it's padding, reformat the page.
+This includes hiding the normal menu and replacing it with slicknav,
+removing column padding/margains, padding extra padding to certain elements,
+change in font size, and removing roundness on corners
+*/
 @media only screen and (max-width:745px) {
   html {
     padding:0px;
@@ -79,8 +112,11 @@ a:hover {
 
   body {
     width:100%;
+    height: 100%;
     padding:0px 0px 10px 0px;
+    border-radius: 0;
     margin:0px;
+    font-size: 16;
   }
 
   p {
@@ -94,4 +130,8 @@ a:hover {
 	.slicknav_menu {
 		display:block;
 	}
+
+  .row {
+    border-radius: 0px;
+  }
 }
