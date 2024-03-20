@@ -1,0 +1,99 @@
+<html lang="en">
+
+  <!-- Souther Illinois Univerity -->
+  <!-- Created March 14th, 2024 -->
+  <!-- Last tested March 19th, 2024 -->
+
+    <head>
+        <!-- Setup the title -->
+        <title>[REDACTED] BIKE SHOP: SERVICES</title>
+
+        <!-- Add favicon -->
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    
+        <!-- Add a meta description -->
+        <meta name="description" content="We are a small shop based out of Carbondale for all of your bike needs!">
+    
+        <!-- Reference the stylesheet -->
+        <link rel="stylesheet" href="./style/main.css">
+    
+        <!-- Pull in Slicknav and what it needs to work -->
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./SlickNav/dist/slicknav.min.css" />
+        <script src="./SlickNav/dist/jquery.slicknav.min.js"></script>
+
+        <!-- This is the JS code for the rollover image to work -->
+        <script language="javascript">
+            function MouseRollover(MyImage) {
+              MyImage.src = "./images/redacted1.png";
+            }
+            function MouseOut(MyImage) {
+              MyImage.src = "./images/redacted2.png";
+            }
+      </script>
+    </head>
+
+    <body>
+        <!-- Use this to state the name of the shop, change the image when hovered over -->
+        <div align="center">
+            <img src="images/redacted1.png" 
+            onMouseOver="MouseRollover(this)" 
+            onMouseOut="MouseOut(this)" 
+            class="mainImg"/>
+        </div>
+
+        <!-- Create and Start the Menu -->
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rental.html">Rentals</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+        </ul>
+
+        <script>
+            $(function(){
+              $('#menu').slicknav();
+            });
+        </script>
+
+
+        <!-- State the purpose of this page -->
+        <h1 align="center"><u>AVAILABLE SERVICES</u></h1>
+        
+
+        <!-- Create somethign to contain the different rows for each service -->
+        <!-- Inside of each row, place an image, state the service, and their respecitive attributes -->
+        <div>
+            <div class="row">
+
+                <img src="./images/service1.jpg">
+                <p align="center">Flate Tire Repair</p>
+
+                <ul>
+                    <li>Price: $20+</li>
+                    <li>Time: Less than ann hour</li>
+                    <li>Call before or walk in</li>
+                </ul>
+
+            </div>
+
+            <div class="row">
+
+                <img src="./images/service2.jpg">
+                <p align="center">Chain Repair</p>
+
+                <ul>
+                    <li>Price: $30</li>
+                    <li>Time: Next Day</li>
+                    <li>Call before or walk in</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- State we can rufuse if something is too badly damnaged -->
+        <h3 align="center"><u>!WE HAVE THE RIGHT TO REFUSE SERVICE!</u></h3>
+    </body>
+
+</html>
