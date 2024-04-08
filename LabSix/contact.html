@@ -1,0 +1,160 @@
+<html lang="en">
+
+  <!-- Souther Illinois Univerity -->
+  <!-- Created March 14th, 2024 -->
+  <!-- Last tested March 26th, 2024 -->
+
+    <head>
+        <!-- Setup the title -->
+        <title>[REDACTED] BIKE SHOP: CONTACTS</title>
+        
+        <!-- Add favicon -->
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    
+        <!-- Add a meta description -->
+        <meta name="description" content="We are a small shop based out of Carbondale for all of your bike needs!">
+    
+        <!-- Reference the stylesheet -->
+        <link rel="stylesheet" href="./style/main.css">
+    
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    
+        <!-- Pull in Slicknav and what it needs to work -->
+        <link rel="stylesheet" href="./SlickNav/dist/slicknav.min.css" />
+        <script src="./SlickNav/dist/jquery.slicknav.min.js"></script>
+        
+        <!-- This is the JS code for the rollover image to work -->
+        <script language="javascript">
+            function MouseRollover(MyImage) {
+              MyImage.src = "./images/redacted1.png";
+            }
+            function MouseOut(MyImage) {
+              MyImage.src = "./images/redacted2.png";
+            }
+      </script>
+    </head>
+
+    <body>
+        <!-- Use this to state the name of the shop, change the image when hovered over -->
+        <div align="center">
+            <img src="images/redacted1.png" 
+            onMouseOver="MouseRollover(this)" 
+            onMouseOut="MouseOut(this)" 
+            class="mainImg"/>
+        </div>
+
+        <!-- Create Slicknav menu -->
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rental.html">Rentals</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+        </ul>
+
+        <script>
+            $(function(){
+              $('#menu').slicknav();
+            });
+        </script>
+
+
+
+        <div class="formdiv">
+          <form name="myform" action="formResult.html" method="get">
+
+          <div class="formchild">
+            <h2>Login Info</h2>
+
+            <label for="email">Email address:</label>
+            <input type="email" name="email" id="email" required placeholder="######@gmail.com"><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" name="phone" id="phone" required placeholder="###-###-####" pattern="\d{10}" title="10 digits"><br>
+
+            <label for="password">Password:</label>
+            <input type="text" name="password" id="password" minlength="8" required placeholder="At least 8 characters" title="At least 8 characters"><br>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" name="fullname" id="fullname" required placeholder="Timmothy Don Johnson"><br>
+
+            <label for="date">Date:</label>
+            <input type="text" name="date" id="date" required placeholder="##-##-##" pattern="\d{6}"><br>
+          </div>
+
+          <div class="formchild">
+            <h2>Geographic information</h2>
+
+            <label for="state">State:</label>
+            <select name="state" id="state">
+              <option value="AL">AL</option>
+              <option value="AK">AK</option>
+              <option value="AZ">AZ</option>
+              <option value="AR">AR</option>
+              <option value="CA">CA</option>
+              <option value="CO">CO</option>
+              <option value="CT">CT</option>
+              <option value="DE">DE</option>
+              <option value="FL">FL</option>
+              <option value="GA">GA</option>
+              <option value="HI">HI</option>
+              <option value="ID">ID</option>
+              <option value="IL">IL</option>
+              <option value="IN">IN</option>
+              <option value="IA">IA</option>
+            </select> <br>
+
+            <label for="city">City:</label>
+            <input type="city" name="city" id="state" required placeholder="Marion"><br>
+
+            <label for="zip">Zip Code:</label>
+            <input type="text" name="zip" id="zip" required placeholder="Five digits" pattern="\d{5}" title="99999"><br>
+          </div>
+
+          <div class="formchild">
+            <h2>Message:</h2>
+            <input type="text" name="message" id="message" class="message" minlength="50" maxlength="200" required placeholder="50-200 characters" title="Between 50-200 characters"><br>
+          </div>
+
+          <div class="formchild">
+            <h2>Inquiry Type:</h2>
+
+            <label for="buisness">Buisness Related:</label>
+            <input type="checkbox" name="buisness" id="buisness"><br>
+            
+            <label for="customer">Customer Related:</label>
+            <input type="checkbox" name="customer" id="customer"><br>
+
+            <label for="review">Review:</label>
+            <input type="checkbox" name="review" id="review"><br>
+          </div>
+
+          <div class="formchild">
+            <h2>Item Type:</h2>
+
+            <label for="rentbike">Rented Bike:</label>
+            <input type="checkbox" name="rentbike" id="rentbike"><br>
+
+            <label for="buybike">Bought Bike:</label>
+            <input type="checkbox" name="buybike" id="buybike"><br>
+
+            <label for="renthelmet">Rented Helmet:</label>
+            <input type="checkbox" name="renthelmet" id="renthelmet"><br>
+
+          </div>
+
+            <h2>!Thank you for filling out the form!</h2>
+            <input type="submit" name="button" id="button" value="Submit">
+            <input type="reset" name="reset" id="reset"> 
+        </form>
+      </div>
+
+      <!-- State Where the shop is and also not DoXX myself publically -->
+      <h1 align="center"><u>Where might you be able to reach us?</u></h1>
+
+      <img src="images/redactedStore.jpg" alt="Image of our store" class="center">
+
+      <h3 align="center">Call (618)[REDACTED] or visit us at:<br>NoWhere 203 St. Carbondale, Illinois<br>62901</h3>
+  </body>
+        
+</html>
